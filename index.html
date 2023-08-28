@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="own.css" />
+    <script src="own.js"></script>
+  </head>
+  <body class="bg-dark position-relative">
+    <!-- Start Navbar -->
+    <nav class="navbar shadow navbar-expand-lg bg-dark navbar-dark uppercase">
+      <div class="container">
+        <a class="navbar-brand highlight f-sp-1 bold"> Ridwan </a>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <section class="uppercase content h-full-nav">
+      <div class="pt-5">
+        <h4 class="text-center d-block d-md-none f-sp-1 text-danger bold mt-3">
+          Fullstack Web Developer
+        </h4>
+        <h1 class="text-center d-none d-md-block f-sp-1 text-danger bold mt-3">
+          Fullstack Web Developer
+        </h1>
+
+        <h6 class="text-center d-block d-md-none f-sp-1 text-white mt-3">
+          I Love Write Code & Configure Server
+        </h6>
+        <h4 class="text-center d-none d-md-block f-sp-1 text-white mt-3">
+          I Love Write Code & Configure Server
+        </h4>
+
+        <img
+          src="https://cdn.discordapp.com/attachments/1145377300033052692/1145385180098482288/me.jpg"
+          style="max-height: 300px; max-width: 300px"
+          class="d-block w-50 mx-auto mt-3 rounded-circle"
+        />
+      </div>
+    </section>
+
+    <section class="uppercase bg-white h-min-full">
+      <div class="container pt-4">
+        <p>
+          <a
+            class="btn btn-outline-danger highlight f-sp-1"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#aboutTab"
+            aria-expanded="false"
+            aria-controls="aboutTab"
+          >
+            About
+          </a>
+
+          <a
+            class="btn btn-outline-danger highlight f-sp-1"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#skillTab"
+            aria-expanded="false"
+            aria-controls="skillTab"
+          >
+            Skill
+          </a>
+
+          <a
+            class="btn btn-outline-danger highlight f-sp-1"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#projectTab"
+            aria-expanded="false"
+            aria-controls="projectTab"
+          >
+            Project
+          </a>
+
+          <a
+            class="btn btn-outline-danger highlight f-sp-1"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#carouselTab"
+            aria-expanded="false"
+            aria-controls="carouselTab"
+          >
+            Carausel
+          </a>
+        </p>
+
+        <div
+          class="collapse f-sp-1 pb-3 position-relative"
+          dt-zs-circle="true"
+          style="height: 400px"
+        ></div>
+
+        <div class="collapse f-sp-1 pb-3" id="carouselTab">
+          <div class="card shadow card-body">
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://source.unsplash.com/800x800?pizza" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://source.unsplash.com/800x800?pizza" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://source.unsplash.com/800x800?pizza" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project -->
+        <div class="collapse f-sp-1 pb-3" id="projectTab">
+          <div class="card shadow card-body">
+            <h6 class="bold">Project</h6>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <div class="card">
+                  <img
+                    src="https://cdn.discordapp.com/attachments/1145377300033052692/1145377624978366605/rena_dashboard.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <hr />
+                    <h5>Rena Project CMS</h5>
+                    <hr />
+                    <p class="m-0">
+                      Using : <span class="text-danger">php,AngularJS</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="card">
+                  <img
+                    src="https://cdn.discordapp.com/attachments/1145377300033052692/1145380705417826367/sepajak_adminFrontend.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <hr />
+                    <h5>Sepajak CMS</h5>
+                    <hr />
+                    <p class="m-0">
+                      Using : <span class="text-danger">VueJS</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="offset-md-3 col-md-6">
+                <div class="card">
+                  <img
+                    src="data:image/png;base64,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"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <hr />
+                    <a
+                      href="https://github.com/zuzustack/apache-fpm"
+                      target="_blank"
+                      class="text-decoration-none"
+                      >Apache FPM Configure Docker</a
+                    >
+                    <hr />
+                    <p class="m-0">
+                      Using : <span class="text-danger">Docker</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project -->
+
+        <div class="collapse f-sp-1 pb-3 show" id="aboutTab">
+          <div class="card card-body shadow">
+            <h4>Hi I'm Ridwan Nice To Meet You</h4>
+            <p>
+              I started my journey 3 years ago, I focused on fullstack web
+              developer and dev ops as a junior.
+            </p>
+          </div>
+        </div>
+
+        <div class="collapse f-sp-1 pb-3" id="skillTab">
+          <div class="card shadow card-body">
+            <h6 class="bold text-center d-block d-md-none">Skill</h6>
+            <h6 class="bold d-none d-md-block">Skill</h6>
+            <div class="row">
+              <div class="col-md-3 mb-4 text-center">
+                <p class="bold">Native Language</p>
+                <p class="m-0">Javascript</p>
+                <p class="m-0">TypeScript</p>
+                <p class="m-0">CSS</p>
+                <p class="m-0">HTML</p>
+                <p class="m-0">PHP</p>
+                <p class="m-0">C++</p>
+                <p class="m-0">GO</p>
+                <p class="m-0">Java</p>
+                <p class="m-0">Python</p>
+              </div>
+              <div class="col-md-3 mb-4 text-center">
+                <p class="bold">Database</p>
+                <p class="m-0">Mysql</p>
+                <p class="m-0">PostgreSQL</p>
+                <p class="m-0">Elastic Search</p>
+                <p class="m-0">Firebase</p>
+                <p class="m-0">MongoDB</p>
+              </div>
+              <div class="col-md-3 mb-4 text-center">
+                <p class="bold">Framework</p>
+                <p class="m-0">Laravel</p>
+                <p class="m-0">Vue JS</p>
+                <p class="m-0">React JS</p>
+                <p class="m-0">Bootstrap</p>
+                <p class="m-0">Angular JS</p>
+                <p class="m-0">Gin</p>
+              </div>
+              <div class="col-md-3 mb-4 text-center">
+                <p class="bold">Servering Tool</p>
+                <p class="m-0">Linux</p>
+                <p class="m-0">Docker</p>
+                <p class="m-0">Kong</p>
+                <p class="m-0">Apache</p>
+                <p class="m-0">Lighttpd</p>
+                <p class="m-0">NGINX</p>
+                <p class="m-0">NGROK</p>
+                <p class="m-0">VERCEL</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="uppercase h-min-full text-center py-5">
+      <div class="py-5">
+        <h4 class="text-danger bold py-5">
+          "the hard part is being consistent"
+        </h4>
+        <div class="d-flex justify-content-center">
+          <a
+            target="_blank"
+            href="https://www.instagram.com/wannssss_/"
+            class="rounded-circle border text-white me-3 text-decoration-none"
+            style="
+              width: 50px;
+              height: 50px;
+              display: grid;
+              place-content: center;
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-instagram"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+              />
+            </svg>
+          </a>
+          <a
+            target="_blank"
+            href="https://github.com/zuzustack"
+            class="rounded-circle border text-white text-decoration-none"
+            style="
+              width: 50px;
+              height: 50px;
+              display: grid;
+              place-content: center;
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-github"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+        </div>
+        <h5 class="text-danger py-5">Made By Me</h5>
+      </div>
+    </section>
+
+    <!-- custom cursor -->
+    <div id="customcursor" class="custom-cursor d-none d-md-block">
+      <div class="blob"></div>
+    </div>
+    <!-- custom cursor -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

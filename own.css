@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+@font-face {
+  font-family: valorantFont;
+  src: url(/valorantFont.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: valorantMediumFont;
+  src: url(/valorantMediumFont.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: valorantBoldFont;
+  src: url(/valorantBoldFont.woff2) format("woff2");
+}
+
+body{
+  overflow-x: hidden !important;
+}
+
+* {
+  font-family: "valorantFont", sans-serif;
+  letter-spacing: 0.08em;
+}
+
+.f-sp-1,
+.f-sp-1 * {
+  letter-spacing: 0.02em !important;
+}
+
+.place-content-center{
+  place-content: center;
+}
+
+.medium,
+.medium > * {
+  font-family: "valorantMediumFont", sans-serif !important;
+}
+
+.bold,
+.bold > * {
+  font-family: "valorantBoldFont", sans-serif !important;
+}
+
+a.highlight {
+  cursor: none !important;
+}
+
+a {
+  cursor: pointer;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.custom-cursor {
+  pointer-events: none;
+  display: block;
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  transition: none;
+  display: grid;
+  justify-content: center;
+  place-content: center;
+}
+
+.custom-cursor .blob {
+  z-index: 999 !important;
+  background-color: rgba(var(--bs-danger-rgb),.5);
+  width: 0rem;
+  height: 0rem;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.custom-cursor-show .blob {
+  width: 3rem;
+  height: 3rem;
+}
+
+zs-higlight {
+  width: fit-content;
+}
+
+.mask-bg {
+  filter: brightness(0.4);
+  width: 10rem;
+  height: 10rem;
+}
+
+@keyframes blipAnimation {
+  0% {
+    filter: opacity(0);
+  }
+  50% {
+    filter: opacity(1);
+  }
+  100% {
+    filter: opacity(0);
+  }
+}
+
+.blip {
+  animation-name: blipAnimation;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  transition: 0.1s;
+}
+
+@keyframes loadText {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.load-effect {
+  animation-name: loadText;
+  animation-duration: .8s;
+  animation-iteration-count: 1;
+  transition: 0.1s;
+}
+
+.photo-card{
+  border-top-left-radius: 100% ;
+  border-top-right-radius: 100% ;
+}
+
+.carousel-img{
+  background-position: center;
+  background-size: cover;
+}
+
+.photo-card img{
+  transform: translate(-10%,-10%);
+}
+
+.h-max-full-nav{
+  max-height: calc(100vh - 57px) !important;
+}
+
+.h-max-full{
+  box-sizing: border-box;
+  max-height: 100vh !important;
+}
+
+.h-full-nav{
+  box-sizing: content-box;
+  height: calc(100vh - 57px) !important;
+}
+
+.h-full{
+  height: 100vh !important;
+}
+
+.h-min-full{
+  min-height: 100vh !important;
+}
+
+.filter-darker{
+  filter: brightness(.7);
+}
+
+.box {
+  border-radius: 50%;
+  background: rgba(var(--bs-danger-rgb),.2);
+  clip-path: circle(75%);
+  transition: clip-path;
+  animation: infinite;
+}
+
+@keyframes zoomInZoomOut {
+  0% { clip-path: circle(50%); }
+  50% { clip-path: circle(25%); }
+  100% { clip-path: circle(50%); }
+}
+
+.content{
+  border-bottom: 1px solid white;
+}
